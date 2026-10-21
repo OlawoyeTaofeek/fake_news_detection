@@ -1,0 +1,11 @@
+# Core: training + API.
+# scikit-learn and joblib are pinned exactly because a saved model must be loaded
+# with the SAME scikit-learn version it was trained with.
+scikit-learn==1.9.1
+joblib==1.6.0
+pandas>=2.2
+numpy>=1.26
+scipy>=1.11
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7

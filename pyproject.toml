@@ -1,0 +1,26 @@
+[project]
+name = "fake-news-detector"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "OlawoyeTaofeek", email = "habephe21@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "kaggle>=2.2.4",
+    "mlflow>=3.17.1",
+    "numpy>=2.4.6",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "streamlit>=1.66.0",
+]
+
+[project.scripts]
+fake-news-detector = "fake_news_detector:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
